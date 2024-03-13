@@ -1,0 +1,31 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body{
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.image-bg{
+  background: url("./assets/herobg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-colored { background-color:#fff; position: fixed; top: 0; left: 0; }
+.nav-transparent { background-color:transparent;}
+
+
+a {
+  text-decoration: none;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: #000 !important;
+}
