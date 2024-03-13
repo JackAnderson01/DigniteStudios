@@ -8,6 +8,7 @@ import Testimonials from "../components/Testimonials";
 import WhyUs from "../components/WhyUs";
 import Footer from "../components/Footer";
 import Faq from "../components/Faq";
+import Outro from "../components/Outro";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Process />
       <WhyUs />
       <Faq />
+      <Outro />
       <Footer />
     </div>
   );

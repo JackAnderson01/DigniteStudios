@@ -13,7 +13,7 @@ body{
 }
 
 .image-bg{
-  background: url("./assets/herobg.jpg");
+  background: url("./assets/herobg.webp");
   background-size: cover;
   background-position: center;
 }
