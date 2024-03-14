@@ -21,6 +21,7 @@ import { SiMysql } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiPhp } from "react-icons/si";
+import { SiGooglecloud } from "react-icons/si";
 
 const Technologies = () => {
   const [currentTab, setCurrentTab] = useState("mobile");
@@ -113,6 +114,10 @@ const Technologies = () => {
     ],
     devops: [
       {
+        icon: <FaAws />,
+        text: "Aws",
+      },
+      {
         icon: <FaDigitalOcean />,
         text: "Digital Ocean",
       },
@@ -121,8 +126,8 @@ const Technologies = () => {
         text: "Azure",
       },
       {
-        icon: <FaAws />,
-        text: "Aws",
+        icon: <SiGooglecloud />,
+        text: "Google Cloud",
       },
       {
         icon: <FaLinode />,
@@ -141,7 +146,7 @@ const Technologies = () => {
         <div className="w-full h-auto lg:h-16 flex flex-wrap lg:flex-nowrap gap-2 justify-center items-start">
           <button
             onClick={() => setCurrentTab("mobile")}
-            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
+            className={`lg:w-[12%] w-[48%] md:w-[32%]  h-16 lg:h-full ${
               currentTab == "mobile" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
@@ -149,7 +154,7 @@ const Technologies = () => {
           </button>
           <button
             onClick={() => setCurrentTab("frontend")}
-            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
+            className={`lg:w-[12%] w-[48%] md:w-[32%]  h-16 lg:h-full ${
               currentTab == "frontend" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
@@ -157,7 +162,7 @@ const Technologies = () => {
           </button>
           <button
             onClick={() => setCurrentTab("database")}
-            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
+            className={`lg:w-[12%] w-[48%] md:w-[32%]  h-16 lg:h-full ${
               currentTab == "database" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
@@ -165,7 +170,7 @@ const Technologies = () => {
           </button>
           <button
             onClick={() => setCurrentTab("backend")}
-            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
+            className={`lg:w-[12%] w-[48%] md:w-[32%]  h-16 lg:h-full ${
               currentTab == "backend" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
@@ -173,7 +178,7 @@ const Technologies = () => {
           </button>
           <button
             onClick={() => setCurrentTab("cms")}
-            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
+            className={`lg:w-[12%] w-[48%] md:w-[32%]  h-16 lg:h-full ${
               currentTab == "cms" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
@@ -181,7 +186,7 @@ const Technologies = () => {
           </button>
           <button
             onClick={() => setCurrentTab("devops")}
-            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
+            className={`lg:w-[12%] w-[48%] md:w-[32%]  h-16 lg:h-full ${
               currentTab == "devops" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >

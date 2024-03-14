@@ -13,12 +13,12 @@ import {
 const HeroContent = () => {
   return (
     <div className="w-full h-[calc(100%-6rem)] py-14 lg:py-0 flex flex-col gap-10 justify-center items-start ">
-      <div className="w-auto flex flex-col justify-start items-start gap-6">
-        <div className="flex flex-col gap-2 justify-start items-start">
-          <h1 className="text-[46px] lg:text-[56px] font-bold text-white leading-tight">
+      <div className="w-full flex flex-col justify-start md:items-center lg:items-start items-start gap-6">
+        <div className="flex flex-col gap-2 justify-start md:items-center lg:items-start items-start">
+          <h1 className="text-[46px] md:text-[56px] md:text-center lg:text-left font-bold text-white leading-tight">
             Modernizing Mobile <br /> Platforms
           </h1>
-          <span className="text-gray-200 text-[18px] font-medium">
+          <span className="text-gray-200 text-[18px] md:text-xl md:text-center lg:text-left font-medium">
             Custom mobile apps. User experience & design. Engagement &<br />
             intelligence. Native & cross-platform
           </span>

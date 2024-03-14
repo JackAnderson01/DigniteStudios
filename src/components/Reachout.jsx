@@ -14,13 +14,13 @@ import { Link } from "react-router-dom";
 
 const Reachout = () => {
   return (
-    <div className="w-full h-auto flex flex-col lg:flex-row gap-6 lg:gap-3 justify-start items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#dd1b38]">
-      <div className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center items-start">
-        <span className="text-5xl font-extrabold text-white">
+    <div className="w-full h-auto flex flex-col lg:flex-row gap-6 lg:gap-3 justify-start  items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#dd1b38]">
+      <div className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center items-start">
+        <span className="text-5xl md:text-center font-extrabold text-white">
           Reach Out To Dignite <br />
           Studios.
         </span>
-        <div className="flex w-full justify-start items-start gap-2">
+        <div className="flex w-full justify-start md:justify-center items-start gap-2">
           <Link
             to="https://www.facebook.com/dignitestudios"
             target="_blank"
@@ -72,7 +72,7 @@ const Reachout = () => {
           </Link>
         </div>
       </div>
-      <div className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center items-start">
+      <div className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center items-start">
         <span className="text-5xl font-extrabold text-white">Contact Us.</span>
         <span className="w-auto h-auto text-white flex justify-center items-center gap-2">
           <FaPhoneAlt className="text-xl " />

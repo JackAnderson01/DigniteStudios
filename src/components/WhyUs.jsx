@@ -7,7 +7,7 @@ const WhyUs = () => {
       <span className="text-4xl lg:text-6xl text-center font-extrabold text-white">
         Why Dignite?
       </span>
-      <div className="w-full h-auto grid lg:gap-8 grid-cols-1 lg:grid-cols-2  lg:grid-rows-2">
+      <div className="w-full h-auto grid lg:gap-8 grid-cols-1 md:grid-cols-2  md:grid-rows-2">
         <div className="w-full h-auto   border flex flex-col gap-2 border-[#1c1c1c] p-4 rounded-3xl">
           <img src={Awards} className="h-[70%] hover:scale-105" />
           <span className="text-4xl lg:text-5xl text-center font-bold text-white">

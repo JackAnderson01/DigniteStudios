@@ -9,7 +9,7 @@ const Work = () => {
 
       {/* Carnab */}
       <div className="w-full h-auto flex flex-col lg:flex-row justify-start items-start">
-        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start gap-4">
+        <div className="w-full lg:w-1/2 flex flex-col justify-start md:items-center lg:items-start items-start gap-4">
           <img
             src="https://www.cubix.co/themes/responsiv-clean/assets/images/home/hictic-logo-icn.png"
             className="w-20"
@@ -19,11 +19,11 @@ const Work = () => {
             Mobile App
           </span>
 
-          <span className="text-4xl lg:text-5xl font-extrabold text-white">
+          <span className="text-4xl md:text-5xl font-extrabold text-white">
             Carnab
           </span>
 
-          <span className="text-lg lg:text-xl font-semibold text-gray-300">
+          <span className="text-lg md:text-xl md:text-center lg:text-left  font-semibold text-gray-300">
             This app displays automobiles in the most thorough way possible,
             from the outside to the inside, but what distinguishes it from other
             online shops is its test, the 170 POINT INSPECTION.
@@ -45,7 +45,7 @@ const Work = () => {
         <div className="hidden my-4 overflow-hidden w-full lg:w-1/2 lg:flex  justify-center items-center gap-4">
           <img src={Ivy} className="scale-125" />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start gap-4">
+        <div className="w-full lg:w-1/2 flex flex-col justify-start md:items-center lg:items-start items-start gap-4">
           <img
             src="https://www.cubix.co/themes/responsiv-clean/assets/images/home/hictic-logo-icn.png"
             className="w-20"
@@ -55,11 +55,11 @@ const Work = () => {
             Mobile App
           </span>
 
-          <span className="text-4xl lg:text-5xl font-extrabold text-white">
+          <span className="text-4xl md:text-5xl font-extrabold text-white">
             I.V.Y Wallet
           </span>
 
-          <span className="text-lg lg:text-xl font-semibold text-gray-300">
+          <span className="text-lg md:text-xl md:text-center lg:text-left  font-semibold text-gray-300">
             This App is an unfastened price range supervisor and spending
             tracker app that’ll assist you control your private budget with
             ease.
@@ -80,7 +80,7 @@ const Work = () => {
       </div>
       {/* DoIt */}
       <div className="w-full h-auto flex flex-col lg:flex-row justify-start items-start">
-        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start gap-4">
+        <div className="w-full lg:w-1/2 flex flex-col justify-start md:items-center lg:items-start items-start gap-4">
           <img
             src="https://www.cubix.co/themes/responsiv-clean/assets/images/home/hictic-logo-icn.png"
             className="w-20"
@@ -90,11 +90,11 @@ const Work = () => {
             Mobile App
           </span>
 
-          <span className="text-4xl lg:text-5xl font-extrabold text-white">
+          <span className="text-4xl md:text-5xl font-extrabold text-white">
             Do It Relationship
           </span>
 
-          <span className="text-lg lg:text-xl font-semibold text-gray-300">
+          <span className="text-lg md:text-xl md:text-center lg:text-left  font-semibold text-gray-300">
             A self-help app providing a springboard toward a great relationship,
             a middle-ground before therapy, and a complement to therapy.
             <br /> The Duet app is for anyone in a relationship, experiencing
@@ -115,7 +115,7 @@ const Work = () => {
         <div className="hidden my-4 overflow-hidden w-1/2 lg:flex  justify-center items-center gap-4">
           <img src={SkinCare} className="scale-125" />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col justify-start items-start gap-4">
+        <div className="w-full lg:w-1/2 flex flex-col justify-start md:items-center lg:items-start items-start gap-4">
           <img
             src="https://www.cubix.co/themes/responsiv-clean/assets/images/home/hictic-logo-icn.png"
             className="w-20"
@@ -125,11 +125,11 @@ const Work = () => {
             Mobile App
           </span>
 
-          <span className="text-4xl lg:text-5xl font-extrabold text-white">
+          <span className="text-4xl md:text-5xl font-extrabold text-white">
             Skin Care App
           </span>
 
-          <span className="text-lg lg:text-xl font-semibold text-gray-300">
+          <span className="text-lg md:text-xl md:text-center lg:text-left font-semibold text-gray-300">
             This app locates skincare items that are appropriate for consumers’
             skin types while also reminding them to utilize their skincare
             products.
