@@ -2,7 +2,7 @@ import React from "react";
 
 const Outro = () => {
   return (
-    <div className="w-full h-auto flex flex-col gap-10  bg-[#0e0e10]  justify-start items-center py-6 lg:py-14 px-4 lg:px-36 xl:px-48 ">
+    <div className="w-full h-auto flex flex-col gap-10  bg-[#000]  justify-start items-center py-6 lg:py-14 px-4 lg:px-36 xl:px-48 ">
       <span className="text-6xl text-center font-extrabold text-white">
         15 years of building digital products and we are just getting started!
       </span>

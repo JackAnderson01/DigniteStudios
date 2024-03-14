@@ -9,6 +9,8 @@ import WhyUs from "../components/WhyUs";
 import Footer from "../components/Footer";
 import Faq from "../components/Faq";
 import Outro from "../components/Outro";
+import Reachout from "../components/Reachout";
+import Technologies from "../components/Technologies";
 
 const Home = () => {
   return (
@@ -19,8 +21,10 @@ const Home = () => {
       <Testimonials />
       <Process />
       <WhyUs />
+      <Technologies />
       <Faq />
       <Outro />
+      <Reachout />
       <Footer />
     </div>
   );
