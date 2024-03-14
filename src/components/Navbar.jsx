@@ -7,8 +7,7 @@ import NavbarModal from "./NavbarModal";
 import { GlobalContext } from "../utils/GlobalContext";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const { navigateTo } = useContext(GlobalContext);
+  const { isOpen, setIsOpen, navigateTo } = useContext(GlobalContext);
   return (
     <div
       id="mynav"

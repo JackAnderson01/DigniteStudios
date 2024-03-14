@@ -27,7 +27,7 @@ const Reachout = () => {
         variants={fadeIn("right", "tween", 0.2, 1)}
         className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center lg:items-start items-start"
       >
-        <span className="text-5xl md:text-center lg:text-left font-extrabold text-white">
+        <span className="text-5xl  md:text-center lg:text-left font-extrabold text-white">
           Reach Out To Dignite <br />
           Studios.
         </span>
@@ -85,7 +85,7 @@ const Reachout = () => {
       </motion.div>
       <motion.div
         variants={fadeIn("left", "tween", 0.2, 1)}
-        className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center lg:items-start ml-12 items-start"
+        className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center lg:items-start lg:ml-12 items-start"
       >
         <span className="text-5xl font-extrabold text-white">Contact Us.</span>
         <span className="w-auto h-auto text-white flex justify-center items-center gap-2">

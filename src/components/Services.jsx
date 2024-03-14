@@ -75,7 +75,7 @@ const Services = () => {
         <span className="text-[#dd1b38] text-sm  font-semibold">
           DESIGN. DEVELOPMENT. CONSULTANCY.
         </span>
-        <h1 className="text-4xl md:text-6xl md:text-center lg:text-left font-extrabold text-white">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl md:text-center lg:text-left font-extrabold text-white">
           One team
           <br />
           to create it all

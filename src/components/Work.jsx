@@ -8,7 +8,7 @@ const Work = () => {
       id="work"
       className="w-full h-auto flex flex-col gap-14  bg-[#000]  justify-start items-center py-4 lg:py-10 px-4 lg:px-8 xl:px-48 "
     >
-      <span className="text-4xl lg:text-6xl lg:mb-14 text-center font-extrabold text-white">
+      <span className="text-4xl md:text-5xl lg:text-6xl lg:mb-14 text-center font-extrabold text-white">
         Our Work Speaks For Itself.
       </span>
 
@@ -24,7 +24,7 @@ const Work = () => {
             Mobile App
           </span>
 
-          <span className="text-4xl md:text-5xl font-extrabold text-white">
+          <span className="text-4xl lg:text-5xl font-extrabold text-white">
             Carnab
           </span>
 
@@ -60,7 +60,7 @@ const Work = () => {
             Mobile App
           </span>
 
-          <span className="text-4xl md:text-5xl font-extrabold text-white">
+          <span className="text-4xl lg:text-5xl font-extrabold text-white">
             I.V.Y Wallet
           </span>
 
@@ -95,7 +95,7 @@ const Work = () => {
             Mobile App
           </span>
 
-          <span className="text-4xl md:text-5xl font-extrabold text-white">
+          <span className="text-4xl lg:text-5xl font-extrabold text-white">
             Do It Relationship
           </span>
 
@@ -130,7 +130,7 @@ const Work = () => {
             Mobile App
           </span>
 
-          <span className="text-4xl md:text-5xl font-extrabold text-white">
+          <span className="text-4xl lg:text-5xl font-extrabold text-white">
             Skin Care App
           </span>
 

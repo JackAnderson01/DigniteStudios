@@ -13,7 +13,7 @@ const Outro = () => {
     >
       <motion.span
         variants={textVariant(0.3)}
-        className="text-4xl lg:text-6xl text-center font-extrabold text-white"
+        className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold text-white"
       >
         15 years of building digital products and we are just getting started!
       </motion.span>

@@ -4,12 +4,15 @@ import { useNavigate } from "react-router-dom";
 export const GlobalContext = createContext();
 
 export const GlobalContextProvider = ({ children }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const navigateTo = (link) => {
     // navigate("/home");
     const scrollToElement = () => {
       const elem = document.getElementById(link);
 
       if (elem) {
+        setIsOpen(false);
         elem.scrollIntoView({
           behavior: "smooth",
         });
@@ -69,6 +72,8 @@ export const GlobalContextProvider = ({ children }) => {
         theme,
         setTheme,
         navigateTo,
+        isOpen,
+        setIsOpen,
       }}
     >
       <div>{children}</div>

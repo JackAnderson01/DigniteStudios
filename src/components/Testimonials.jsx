@@ -45,7 +45,7 @@ const Testimonials = () => {
       id="testimonial"
       className="w-full h-auto flex flex-col gap-10  bg-[#0e0e10]  justify-start items-center py-4 lg:py-10 px-4 lg:px-8 xl:px-48 "
     >
-      <span className="text-4xl lg:text-6xl text-center font-extrabold text-white">
+      <span className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold text-white">
         We are trusted worldwide.
       </span>
       <div className="w-full h-full flex justify-center items-center gap-2">
