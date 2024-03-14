@@ -15,6 +15,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
+import { staggerContainer, fadeIn, textVariant } from "../utils/motion";
 
 const Services = () => {
   const arr = [
@@ -65,16 +67,28 @@ const Services = () => {
     },
   ];
   return (
-    <div className="w-full h-auto lg:h-[26rem] flex flex-col lg:flex-row gap-3 justify-start items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#0e0e10]">
-      <div className="w-full lg:w-[40%] h-full flex flex-col gap-5 justify-center md:items-center lg:items-start items-start">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="w-full h-auto lg:h-[26rem] flex flex-col lg:flex-row gap-3 justify-start items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#0e0e10]"
+    >
+      <motion.div
+        variants={fadeIn("right", "tween", 0.2, 1)}
+        className="w-full lg:w-[40%] h-full flex flex-col gap-5 justify-center md:items-center lg:items-start items-start"
+      >
         <span className="text-[#dd1b38] text-sm  font-semibold">
           DESIGN. DEVELOPMENT. CONSULTANCY.
         </span>
-        <span className="text-4xl md:text-6xl md:text-center lg:text-left font-extrabold text-white">
+        <motion.h1
+          variants={textVariant(0.3)}
+          className="text-4xl md:text-6xl md:text-center lg:text-left font-extrabold text-white"
+        >
           One team
           <br />
           to create it all
-        </span>
+        </motion.h1>
         <span className="text-gray-400 text-lg md:text-xl  font-semibold">
           Need a full design & development package? we got you covered.
         </span>
@@ -82,9 +96,12 @@ const Services = () => {
         <button className="w-auto px-4 h-14 rounded-full border-2 border-[#dd1b38] text-[#dd1b38] hover:bg-[#dd1b38] hover:text-white transition-all duration-200 flex items-center justify-center">
           See What We Can Do
         </button>
-      </div>
+      </motion.div>
 
-      <div className="w-full lg:w-[60%] mt-6 lg:mt-0 h-full flex justify-center items-center gap-2">
+      <motion.div
+        variants={fadeIn("left", "tween", 0.2, 1)}
+        className="w-full lg:w-[60%] mt-6 lg:mt-0 h-full flex justify-center items-center gap-2"
+      >
         <Swiper
           slidesPerView={window.innerWidth < 768 ? 1 : 2}
           spaceBetween={30}
@@ -109,8 +126,8 @@ const Services = () => {
             );
           })}
         </Swiper>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

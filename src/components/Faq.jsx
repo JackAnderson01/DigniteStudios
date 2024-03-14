@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { staggerContainer, fadeIn } from "../utils/motion";
 
 const Faq = () => {
   return (
-    <div
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
       id="faq"
       className="relative w-full h-auto px-6 py-6 md:px-8 md:py-14 lg:px-20 lg:py-8 flex flex-col justify-center items-center gap-12 bg-[#0e0e10]"
     >
@@ -11,7 +17,8 @@ const Faq = () => {
       </h1>
 
       <div className="w-full h-auto  md:px-6 lg:px-14 flex flex-col gap-3 justify-start items-start">
-        <div
+        <motion.div
+          variants={fadeIn("right", "tween", 0.2, 1)}
           id="accordion-collapse"
           data-accordion="collapse"
           className="w-full"
@@ -66,9 +73,10 @@ const Faq = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          variants={fadeIn("left", "tween", 0.2, 1)}
           id="accordion-collapse"
           data-accordion="collapse"
           className="w-full"
@@ -123,9 +131,10 @@ const Faq = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          variants={fadeIn("right", "tween", 0.2, 1)}
           id="accordion-collapse"
           data-accordion="collapse"
           className="w-full"
@@ -178,9 +187,10 @@ const Faq = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          variants={fadeIn("left", "tween", 0.2, 1)}
           id="accordion-collapse"
           data-accordion="collapse"
           className="w-full"
@@ -236,9 +246,10 @@ const Faq = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          variants={fadeIn("right", "tween", 0.2, 1)}
           id="accordion-collapse"
           data-accordion="collapse"
           className="w-full"
@@ -294,9 +305,10 @@ const Faq = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          variants={fadeIn("left", "tween", 0.2, 1)}
           id="accordion-collapse"
           data-accordion="collapse"
           className="w-full"
@@ -347,9 +359,10 @@ const Faq = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          variants={fadeIn("right", "tween", 0.2, 1)}
           id="accordion-collapse"
           data-accordion="collapse"
           className="w-full"
@@ -401,9 +414,9 @@ const Faq = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

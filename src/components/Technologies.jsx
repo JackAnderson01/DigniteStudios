@@ -142,7 +142,7 @@ const Technologies = () => {
         Technologies we work with!
       </span>
 
-      <div className="w-full h-auto bg-[#1c1c1c] flex flex-col gap-2 justify-start items-start">
+      <div className="w-full h-auto bg-[#dd1b38] flex flex-col gap-2 justify-start items-start">
         <div className="w-full h-auto lg:h-16 flex flex-wrap lg:flex-nowrap gap-2 justify-center items-start">
           <button
             onClick={() => setCurrentTab("mobile")}
@@ -193,12 +193,12 @@ const Technologies = () => {
             Infra and devops
           </button>
         </div>
-        <div className="w-full h-auto flex gap-8 lg:gap-0 justify-center px-4 py-10 items-start flex-wrap">
+        <div className="w-full h-auto transition-all duration-100 flex gap-8 lg:gap-0 justify-center px-4 py-10 items-start flex-wrap">
           {detailObj[currentTab].map((item, key) => {
             return (
               <div
                 key={key}
-                className="w-32 h-auto flex flex-col justify-center items-center gap-3"
+                className="w-32 transition-all duration-150 h-auto flex flex-col justify-center items-center gap-3"
               >
                 <span className="text-5xl text-white">{item.icon}</span>
                 <span className="text-xs font-semibold text-white">

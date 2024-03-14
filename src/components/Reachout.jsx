@@ -11,11 +11,22 @@ import {
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { staggerContainer, fadeIn } from "../utils/motion";
 
 const Reachout = () => {
   return (
-    <div className="w-full h-auto flex flex-col lg:flex-row gap-6 lg:gap-3 justify-start  items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#dd1b38]">
-      <div className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center items-start">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="w-full h-auto flex flex-col lg:flex-row gap-6 lg:gap-3 justify-start  items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#dd1b38]"
+    >
+      <motion.div
+        variants={fadeIn("right", "tween", 0.2, 1)}
+        className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center items-start"
+      >
         <span className="text-5xl md:text-center font-extrabold text-white">
           Reach Out To Dignite <br />
           Studios.
@@ -71,8 +82,11 @@ const Reachout = () => {
             <FaTumblr />
           </Link>
         </div>
-      </div>
-      <div className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center items-start">
+      </motion.div>
+      <motion.div
+        variants={fadeIn("left", "tween", 0.2, 1)}
+        className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center items-start"
+      >
         <span className="text-5xl font-extrabold text-white">Contact Us.</span>
         <span className="w-auto h-auto text-white flex justify-center items-center gap-2">
           <FaPhoneAlt className="text-xl " />
@@ -82,8 +96,8 @@ const Reachout = () => {
           <MdEmail className="text-xl " />
           <span className="font-semibold text-xl">info@dignitestudios.com</span>
         </span>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
