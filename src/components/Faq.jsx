@@ -10,7 +10,7 @@ const Faq = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       id="faq"
-      className="relative w-full h-auto px-6 py-6 md:px-8 md:py-14 lg:px-20 lg:py-8 flex flex-col justify-center items-center gap-12 bg-[#0e0e10]"
+      className="relative w-full h-auto px-6 py-6 md:px-8 md:py-14 lg:px-8 lg:py-8 flex flex-col justify-center items-center gap-12 bg-[#0e0e10]"
     >
       <h1 className="text-5xl mt-4 md:mt-2 lg:mt-0 text-center font-extrabold text-white">
         FAQ

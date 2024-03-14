@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div
       id="root"
-      className=" w-full h-auto flex flex-col justify-start items-start"
+      className="overflow-x-hidden w-full h-auto flex flex-col justify-start items-start"
     >
       <Hero />
       <Services />

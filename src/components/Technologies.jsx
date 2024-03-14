@@ -137,7 +137,7 @@ const Technologies = () => {
   };
 
   return (
-    <div className="w-full h-auto flex flex-col gap-10  bg-[#000]  justify-start items-center py-4 lg:py-10 px-4 lg:px-36 xl:px-48 ">
+    <div className="w-full h-auto flex flex-col gap-10  bg-[#000]  justify-start items-center py-4 lg:py-10 px-4 lg:px-8 xl:px-48 ">
       <span className="text-4xl lg:text-6xl text-center font-extrabold text-white">
         Technologies we work with!
       </span>

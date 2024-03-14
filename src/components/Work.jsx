@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 import { staggerContainer, textVariant, fadeIn } from "../utils/motion";
 const Work = () => {
   return (
-    <div className="w-full h-auto flex flex-col gap-14  bg-[#000]  justify-start items-center py-4 lg:py-10 px-4 lg:px-36 xl:px-48 ">
+    <div
+      id="work"
+      className="w-full h-auto flex flex-col gap-14  bg-[#000]  justify-start items-center py-4 lg:py-10 px-4 lg:px-8 xl:px-48 "
+    >
       <span className="text-4xl lg:text-6xl lg:mb-14 text-center font-extrabold text-white">
         Our Work Speaks For Itself.
       </span>

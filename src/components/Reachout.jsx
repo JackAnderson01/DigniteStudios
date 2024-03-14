@@ -21,17 +21,17 @@ const Reachout = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="w-full h-auto flex flex-col lg:flex-row gap-6 lg:gap-3 justify-start  items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#dd1b38]"
+      className="w-full h-auto flex flex-col lg:flex-row gap-6 lg:gap-3 justify-start  items-start py-12 px-4 lg:px-8 xl:px-48 bg-[#dd1b38]"
     >
       <motion.div
         variants={fadeIn("right", "tween", 0.2, 1)}
-        className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center items-start"
+        className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center lg:items-start items-start"
       >
-        <span className="text-5xl md:text-center font-extrabold text-white">
+        <span className="text-5xl md:text-center lg:text-left font-extrabold text-white">
           Reach Out To Dignite <br />
           Studios.
         </span>
-        <div className="flex w-full justify-start md:justify-center items-start gap-2">
+        <div className="flex w-full justify-start md:justify-center lg:justify-start items-start gap-2">
           <Link
             to="https://www.facebook.com/dignitestudios"
             target="_blank"
@@ -85,7 +85,7 @@ const Reachout = () => {
       </motion.div>
       <motion.div
         variants={fadeIn("left", "tween", 0.2, 1)}
-        className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center items-start"
+        className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center md:items-center lg:items-start ml-12 items-start"
       >
         <span className="text-5xl font-extrabold text-white">Contact Us.</span>
         <span className="w-auto h-auto text-white flex justify-center items-center gap-2">

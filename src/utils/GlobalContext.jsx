@@ -1,8 +1,30 @@
 import React, { createContext, useState, useRef } from "react";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 export const GlobalContext = createContext();
 
 export const GlobalContextProvider = ({ children }) => {
+  const navigateTo = (link) => {
+    // navigate("/home");
+    const scrollToElement = () => {
+      const elem = document.getElementById(link);
+
+      if (elem) {
+        elem.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    };
+
+    // Navigate to the root path
+
+    // Scroll to the element after a delay
+    const timeoutId = setTimeout(scrollToElement, 1000);
+
+    // Clean up the timeout to avoid potential memory leaks
+    return () => clearTimeout(timeoutId);
+  };
+
   // Theme Toggle
   const [theme, setTheme] = useState("light");
   const [palette, setPalette] = useState({
@@ -46,6 +68,7 @@ export const GlobalContextProvider = ({ children }) => {
         palette,
         theme,
         setTheme,
+        navigateTo,
       }}
     >
       <div>{children}</div>
