@@ -42,16 +42,16 @@ const Testimonials = () => {
   ];
   return (
     <div className="w-full h-auto flex flex-col gap-10  bg-[#0e0e10]  justify-start items-center py-4 lg:py-10 px-4 lg:px-36 xl:px-48 ">
-      <span className="text-6xl text-center font-extrabold text-white">
+      <span className="text-4xl lg:text-6xl text-center font-extrabold text-white">
         We are trusted worldwide.
       </span>
       <div className="w-full h-full flex justify-center items-center gap-2">
         <Swiper
-          slidesPerView={2}
+          slidesPerView={1}
           spaceBetween={30}
           centeredSlides={true}
           loop={true}
-          className="mySwiper w-[90%]"
+          className="mySwiper w-full lg:w-[90%]"
           autoplay={{
             delay: 1500,
             disableOnInteraction: false,

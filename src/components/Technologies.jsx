@@ -133,15 +133,15 @@ const Technologies = () => {
 
   return (
     <div className="w-full h-auto flex flex-col gap-10  bg-[#000]  justify-start items-center py-4 lg:py-10 px-4 lg:px-36 xl:px-48 ">
-      <span className="text-6xl text-center font-extrabold text-white">
+      <span className="text-4xl lg:text-6xl text-center font-extrabold text-white">
         Technologies we work with!
       </span>
 
       <div className="w-full h-auto bg-[#1c1c1c] flex flex-col gap-2 justify-start items-start">
-        <div className="w-full h-16 flex gap-2 justify-center items-start">
+        <div className="w-full h-auto lg:h-16 flex flex-wrap lg:flex-nowrap gap-2 justify-center items-start">
           <button
             onClick={() => setCurrentTab("mobile")}
-            className={`w-[12%]  h-full ${
+            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
               currentTab == "mobile" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
@@ -149,7 +149,7 @@ const Technologies = () => {
           </button>
           <button
             onClick={() => setCurrentTab("frontend")}
-            className={`w-[12%]  h-full ${
+            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
               currentTab == "frontend" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
@@ -157,7 +157,7 @@ const Technologies = () => {
           </button>
           <button
             onClick={() => setCurrentTab("database")}
-            className={`w-[12%]  h-full ${
+            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
               currentTab == "database" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
@@ -165,7 +165,7 @@ const Technologies = () => {
           </button>
           <button
             onClick={() => setCurrentTab("backend")}
-            className={`w-[12%]  h-full ${
+            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
               currentTab == "backend" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
@@ -173,7 +173,7 @@ const Technologies = () => {
           </button>
           <button
             onClick={() => setCurrentTab("cms")}
-            className={`w-[12%]  h-full ${
+            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
               currentTab == "cms" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
@@ -181,14 +181,14 @@ const Technologies = () => {
           </button>
           <button
             onClick={() => setCurrentTab("devops")}
-            className={`w-[12%]  h-full ${
+            className={`lg:w-[12%] w-[48%]  h-16 lg:h-full ${
               currentTab == "devops" && "border-b"
             } hover:border-b border-[#f1c036] text-white text-lg flex justify-center items-center`}
           >
             Infra and devops
           </button>
         </div>
-        <div className="w-full h-auto flex justify-center px-4 py-10 items-start flex-wrap">
+        <div className="w-full h-auto flex gap-8 lg:gap-0 justify-center px-4 py-10 items-start flex-wrap">
           {detailObj[currentTab].map((item, key) => {
             return (
               <div

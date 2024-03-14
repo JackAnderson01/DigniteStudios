@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div
       id="mynav"
-      className="w-full h-24 nav-transparent flex justify-between items-center"
+      className="w-full h-auto lg:h-24 nav-transparent flex justify-between items-center"
     >
       <Link to="/">
         <img src={Logo} className="w-28" />
@@ -34,11 +34,11 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="w-auto flex gap-6 justify-start items-center">
-        <span className="w-auto h-auto text-white flex justify-center items-center gap-2">
+        <span className="hidden w-auto h-auto text-white lg:flex justify-center items-center gap-2">
           <FaPhone className="text-lg " />
           <span className="font-semibold">866-978-2220</span>
         </span>
-        <button className="cursor-pointer w-48 h-12 rounded-md flex justify-center items-center bg-gradient-to-r from-[#f15c20] to-[#e00e2dd8] transition-all duration-200 hover:opacity-90 uppercase outline-none border-none text-white text-[16px] font-bold">
+        <button className="cursor-pointer w-32 lg:w-48 h-10 lg:h-12 rounded-md flex justify-center items-center bg-gradient-to-r from-[#f15c20] to-[#e00e2dd8] transition-all duration-200 hover:opacity-90 uppercase outline-none border-none text-white text-[12px] lg:text-[16px] font-bold">
           Estimate Product
         </button>
       </div>

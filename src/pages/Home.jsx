@@ -14,7 +14,10 @@ import Technologies from "../components/Technologies";
 
 const Home = () => {
   return (
-    <div className="w-full h-auto flex flex-col justify-start items-start">
+    <div
+      id="root"
+      className=" w-full h-auto flex flex-col justify-start items-start"
+    >
       <Hero />
       <Services />
       <Work />

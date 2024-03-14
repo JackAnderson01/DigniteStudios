@@ -14,8 +14,8 @@ import { Link } from "react-router-dom";
 
 const Reachout = () => {
   return (
-    <div className="w-full h-auto flex gap-3 justify-start items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#dd1b38]">
-      <div className="w-[50%] h-full flex flex-col gap-5 justify-center items-start">
+    <div className="w-full h-auto flex flex-col lg:flex-row gap-6 lg:gap-3 justify-start items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#dd1b38]">
+      <div className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center items-start">
         <span className="text-5xl font-extrabold text-white">
           Reach Out To Dignite <br />
           Studios.
@@ -72,7 +72,7 @@ const Reachout = () => {
           </Link>
         </div>
       </div>
-      <div className="w-[50%] h-full flex flex-col gap-5 justify-center items-start">
+      <div className="w-full lg:w-[50%] h-full flex flex-col gap-5 justify-center items-start">
         <span className="text-5xl font-extrabold text-white">Contact Us.</span>
         <span className="w-auto h-auto text-white flex justify-center items-center gap-2">
           <FaPhoneAlt className="text-xl " />

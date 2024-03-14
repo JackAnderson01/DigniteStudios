@@ -65,17 +65,17 @@ const Services = () => {
     },
   ];
   return (
-    <div className="w-full h-[26rem] flex gap-3 justify-start items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#0e0e10]">
-      <div className="w-[40%] h-full flex flex-col gap-5 justify-center items-start">
+    <div className="w-full h-auto lg:h-[26rem] flex flex-col lg:flex-row gap-3 justify-start items-start py-12 px-4 lg:px-36 xl:px-48 bg-[#0e0e10]">
+      <div className="w-full lg:w-[40%] h-full flex flex-col gap-5 justify-center items-start">
         <span className="text-[#dd1b38] text-sm  font-semibold">
           DESIGN. DEVELOPMENT. CONSULTANCY.
         </span>
-        <span className="text-6xl font-extrabold text-white">
+        <span className="text-4xl lg:text-6xl font-extrabold text-white">
           One team
           <br />
           to create it all
         </span>
-        <span className="text-gray-400 text-xl  font-semibold">
+        <span className="text-gray-400 text-lg lg:text-xl  font-semibold">
           Need a full design & development package? we got you covered.
         </span>
 
@@ -84,13 +84,13 @@ const Services = () => {
         </button>
       </div>
 
-      <div className="w-[60%] h-full flex justify-center items-center gap-2">
+      <div className="w-full lg:w-[60%] h-full flex justify-center items-center gap-2">
         <Swiper
-          slidesPerView={2}
+          slidesPerView={1}
           spaceBetween={30}
           centeredSlides={true}
           loop={true}
-          className="mySwiper w-[90%]"
+          className="mySwiper w-full"
           autoplay={{
             delay: 1500,
             disableOnInteraction: false,

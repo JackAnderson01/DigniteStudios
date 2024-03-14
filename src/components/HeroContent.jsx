@@ -12,10 +12,10 @@ import {
 
 const HeroContent = () => {
   return (
-    <div className="w-full h-[calc(100%-6rem)]  flex flex-col gap-10 justify-center items-start ">
+    <div className="w-full h-[calc(100%-6rem)] py-14 lg:py-0 flex flex-col gap-10 justify-center items-start ">
       <div className="w-auto flex flex-col justify-start items-start gap-6">
         <div className="flex flex-col gap-2 justify-start items-start">
-          <h1 className="text-[56px] font-bold text-white leading-tight">
+          <h1 className="text-[46px] lg:text-[56px] font-bold text-white leading-tight">
             Modernizing Mobile <br /> Platforms
           </h1>
           <span className="text-gray-200 text-[18px] font-medium">
@@ -24,7 +24,7 @@ const HeroContent = () => {
           </span>
         </div>
 
-        <button className=" cursor-pointer w-36 h-14 flex justify-center items-center border-none outline-none rounded-md bg-blue-500 text-[17px] hover:bg-blue-600 text-white font-bold uppercase">
+        <button className=" cursor-pointer w-36 h-14 flex justify-center items-center border-none outline-none rounded-md bg-[#f15c20] text-[17px] hover:bg-[#f15b20eb] text-white font-bold uppercase">
           Let's Talk
         </button>
       </div>
