@@ -13,15 +13,15 @@ import { Pagination, Navigation } from "swiper/modules";
 
 const ContactUs = () => {
   return (
-    <div className="h-screen w-screen flex justify-start items-start">
-      <div className="w-1/2 h-full flex flex-col gap-6 items-center justify-center bg-gradient-to-r from-[#f15c20] to-[#e00e2dd8]">
+    <div className="h-screen w-screen flex flex-col lg:flex-row justify-start items-start">
+      <div className="w-full lg:w-1/2 p-10 lg:p-4 h-full flex flex-col gap-6 items-center justify-center bg-gradient-to-r from-[#f15c20] to-[#e00e2dd8]">
         <Swiper
           slidesPerView={1}
           navigation={true}
           modules={[Navigation]}
           className="mySwiper w-full"
         >
-          <SwiperSlide className="flex flex-col gap-6 items-center justify-center">
+          <SwiperSlide className="flex text-center lg:text-left flex-col gap-6 items-center justify-center">
             <span className="text-5xl font-extrabold text-white">
               Florida - Lake Lynda Drive
             </span>
@@ -40,7 +40,7 @@ const ContactUs = () => {
               View Location
             </Link>
           </SwiperSlide>
-          <SwiperSlide className="flex flex-col gap-4 items-center justify-center">
+          <SwiperSlide className="flex text-center lg:text-left  flex-col gap-4 items-center justify-center">
             <span className="text-5xl font-extrabold text-white">
               Casper - W 2nd Street
             </span>
@@ -61,7 +61,7 @@ const ContactUs = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="w-1/2 h-full flex items-center justify-center px-6 bg-black relative">
+      <div className="w-full lg:w-1/2 flex-1 py-14 px-10 lg:px-4 lg:py-4 lg:flex-auto h-full flex items-center justify-center  bg-black relative">
         <Link
           to="/"
           className="absolute top-4 left-3 w-10 h-10 flex items-center justify-center rounded-full bg-[#0e0e10] border-2 border-gray-400 text-gray-400 hover:bg-gradient-to-r from-[#f15c20] to-[#e00e2dd8] hover:text-white hover:border-orange-500"

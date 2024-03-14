@@ -36,13 +36,13 @@ const Work = () => {
             View Case Study
           </button>
         </div>
-        <div className="w-full overflow-x-hidden lg:w-1/2 flex  justify-center items-center gap-4">
+        <div className="w-full my-4 overflow-hidden lg:w-1/2 flex  justify-center items-center gap-4">
           <img src={Carnab} className="scale-125" />
         </div>
       </div>
       {/* IVY */}
       <div className="w-full h-auto flex flex-col lg:flex-row  justify-start items-start">
-        <div className="hidden overflow-x-hidden w-full lg:w-1/2 lg:flex  justify-center items-center gap-4">
+        <div className="hidden my-4 overflow-hidden w-full lg:w-1/2 lg:flex  justify-center items-center gap-4">
           <img src={Ivy} className="scale-125" />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col justify-start items-start gap-4">
@@ -74,7 +74,7 @@ const Work = () => {
             View Case Study
           </button>
         </div>
-        <div className="lg:hidden overflow-x-hidden w-full lg:w-1/2 flex  justify-center items-center gap-4">
+        <div className="lg:hidden my-4 overflow-hidden w-full lg:w-1/2 flex  justify-center items-center gap-4">
           <img src={Ivy} className="scale-125" />
         </div>
       </div>
@@ -106,13 +106,13 @@ const Work = () => {
             View Case Study
           </button>
         </div>
-        <div className="w-full overflow-x-hidden lg:w-1/2 flex  justify-center items-center gap-4">
+        <div className="w-full my-4 overflow-hidden lg:w-1/2 flex  justify-center items-center gap-4">
           <img src={DoIt} className="scale-125" />
         </div>
       </div>
       {/* SKINCARE */}
       <div className="w-full h-auto flex lg:flex-row flex-col justify-start items-start">
-        <div className="hidden overflow-x-hidden w-1/2 lg:flex  justify-center items-center gap-4">
+        <div className="hidden my-4 overflow-hidden w-1/2 lg:flex  justify-center items-center gap-4">
           <img src={SkinCare} className="scale-125" />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col justify-start items-start gap-4">
@@ -143,7 +143,7 @@ const Work = () => {
             View Case Study
           </button>
         </div>
-        <div className="lg:hidden overflow-x-hidden w-full lg:w-1/2 flex  justify-center items-center gap-4">
+        <div className="lg:hidden my-4 overflow-hidden w-full lg:w-1/2 flex  justify-center items-center gap-4">
           <img src={SkinCare} className="scale-125" />
         </div>
       </div>

@@ -47,7 +47,7 @@ const Testimonials = () => {
       </span>
       <div className="w-full h-full flex justify-center items-center gap-2">
         <Swiper
-          slidesPerView={1}
+          slidesPerView={window.innerWidth < 800 ? 1 : 2}
           spaceBetween={30}
           centeredSlides={true}
           loop={true}
